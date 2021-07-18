@@ -14,7 +14,7 @@ struct FriendRequestView: View {
     @Binding var isDisplayed: Bool
     
     var body: some View {
-        ExitButtonWrapper(onSubmit: {withAnimation(){isDisplayed = false}}){
+        ExitButton(onSubmit:{isDisplayed = false})
             VStack{
                     GeometryReader{geometry in
                     Text(Map.friendInbox.isEmpty ? "No Friend Requests" : "Friend Requests")
@@ -61,7 +61,7 @@ struct FriendRequestView: View {
                         }
                         
                     }
-                }
+                
             }
             
             
