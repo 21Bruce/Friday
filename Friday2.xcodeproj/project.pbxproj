@@ -43,6 +43,7 @@
 		78D595E326A3F82A00F30174 /* ErrorButtonWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D595E226A3F82A00F30174 /* ErrorButtonWrapper.swift */; };
 		78D595E526A3F84500F30174 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D595E426A3F84500F30174 /* PhotoLibrary.swift */; };
 		78D595E826A3FD3C00F30174 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78D595E726A3FD3C00F30174 /* GoogleService-Info.plist */; };
+		DDBB11ED26A48E4900FA2BE7 /* OwnThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */; };
 		EB308BDA4BC8162DB5C56306 /* Pods_Friday2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC3DB50D2F92ED5FBB16743 /* Pods_Friday2.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		78D595E726A3FD3C00F30174 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CC3DB50D2F92ED5FBB16743 /* Pods_Friday2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Friday2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF54DA5A1B1CB186E08A39B /* Pods-Friday2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friday2.debug.xcconfig"; path = "Target Support Files/Pods-Friday2/Pods-Friday2.debug.xcconfig"; sourceTree = "<group>"; };
+		DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnThoughts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 				78D595DB26A3F7D900F30174 /* ProfileSelection.swift */,
 				78D595DD26A3F7E900F30174 /* Components */,
 				78D595E426A3F84500F30174 /* PhotoLibrary.swift */,
+				DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				78D595BA26A3F5E000F30174 /* MathExtensions.swift in Sources */,
 				78D595E326A3F82A00F30174 /* ErrorButtonWrapper.swift in Sources */,
 				78D595E526A3F84500F30174 /* PhotoLibrary.swift in Sources */,
+				DDBB11ED26A48E4900FA2BE7 /* OwnThoughts.swift in Sources */,
 				78D595C326A3F68900F30174 /* IconView.swift in Sources */,
 				78D595B326A3F57600F30174 /* UserSocialMap.swift in Sources */,
 				78D595CE26A3F70C00F30174 /* ProfilePopover.swift in Sources */,
