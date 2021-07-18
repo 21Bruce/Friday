@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>229181858909-q6d4db8d6d1nlht920rmm06gkuh20l7q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.229181858909-q6d4db8d6d1nlht920rmm06gkuh20l7q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCvATtAKILgNxtfh3mLcL8VvAKXBl-02dw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>229181858909</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.fridaytechnologies.friday</string>
+	<key>PROJECT_ID</key>
+	<string>friday-190aa</string>
+	<key>STORAGE_BUCKET</key>
+	<string>friday-190aa.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:229181858909:ios:6cfa864f3156f9e07859b4</string>
+</dict>
+</plist>
