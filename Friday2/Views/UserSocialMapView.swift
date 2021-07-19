@@ -416,6 +416,7 @@ struct ShareThoughts: View {
                     Spacer()
                     ExitButton(onSubmit: {showPopover = false})
                     .padding(10)
+                        .frame(width: 30, height: 30)
                 }
                 ZStack(alignment:.topLeading){
                     if share.isEmpty{

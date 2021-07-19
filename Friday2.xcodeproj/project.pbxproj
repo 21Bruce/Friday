@@ -14,6 +14,8 @@
 		60C2DCE326A49A02000ADC1E /* HelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2DCE226A49A02000ADC1E /* HelpScreen.swift */; };
 		60C2DCE626A4A5D7000ADC1E /* GeneralQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2DCE526A4A5D7000ADC1E /* GeneralQuestionView.swift */; };
 		60C2DCE926A4CCD8000ADC1E /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2DCE826A4CCD8000ADC1E /* ExitButton.swift */; };
+		60C2DCED26A5B809000ADC1E /* PlanRelocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2DCEC26A5B809000ADC1E /* PlanRelocation.swift */; };
+		60C2DCEF26A5C4AB000ADC1E /* SuggestTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2DCEE26A5C4AB000ADC1E /* SuggestTime.swift */; };
 		78D5959826A3EFAF00F30174 /* Friday2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5959726A3EFAF00F30174 /* Friday2App.swift */; };
 		78D5959C26A3EFB000F30174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D5959B26A3EFB000F30174 /* Assets.xcassets */; };
 		78D5959F26A3EFB000F30174 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D5959E26A3EFB000F30174 /* Preview Assets.xcassets */; };
@@ -56,6 +58,8 @@
 		60C2DCE226A49A02000ADC1E /* HelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpScreen.swift; sourceTree = "<group>"; };
 		60C2DCE526A4A5D7000ADC1E /* GeneralQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralQuestionView.swift; sourceTree = "<group>"; };
 		60C2DCE826A4CCD8000ADC1E /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
+		60C2DCEC26A5B809000ADC1E /* PlanRelocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanRelocation.swift; sourceTree = "<group>"; };
+		60C2DCEE26A5C4AB000ADC1E /* SuggestTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestTime.swift; sourceTree = "<group>"; };
 		70071E1E8382BB09EB6E93B4 /* Pods-Friday2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friday2.release.xcconfig"; path = "Target Support Files/Pods-Friday2/Pods-Friday2.release.xcconfig"; sourceTree = "<group>"; };
 		78D5959426A3EFAF00F30174 /* Friday2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friday2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D5959726A3EFAF00F30174 /* Friday2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friday2App.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 			children = (
 				60C2DCDE26A497FA000ADC1E /* CoordinationView.swift */,
 				60C2DCE526A4A5D7000ADC1E /* GeneralQuestionView.swift */,
+				60C2DCEC26A5B809000ADC1E /* PlanRelocation.swift */,
+				60C2DCEE26A5C4AB000ADC1E /* SuggestTime.swift */,
 			);
 			path = Coordination;
 			sourceTree = "<group>";
@@ -419,8 +425,10 @@
 				78D595CC26A3F6EF00F30174 /* ProfileTabView.swift in Sources */,
 				60C2DCDF26A497FA000ADC1E /* SettingsView.swift in Sources */,
 				78D595CA26A3F6D700F30174 /* ProfileView.swift in Sources */,
+				60C2DCED26A5B809000ADC1E /* PlanRelocation.swift in Sources */,
 				78D595AA26A3F4E600F30174 /* PlanUserConfirmationLayout.swift in Sources */,
 				78D595D626A3F78A00F30174 /* FriendRequestView.swift in Sources */,
+				60C2DCEF26A5C4AB000ADC1E /* SuggestTime.swift in Sources */,
 				60C2DCE326A49A02000ADC1E /* HelpScreen.swift in Sources */,
 				78D595A826A3F4C700F30174 /* PlanCollectionLayout.swift in Sources */,
 				60C2DCE126A497FA000ADC1E /* CoordinationView.swift in Sources */,

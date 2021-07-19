@@ -13,6 +13,9 @@ struct CoordinationView: View {
     @Binding private var showPopover: Bool
     @State var isGeneralQuestionShown: Bool = false
     @State var asking: String = ""
+    @State var isPlanRelocationShown: Bool = false
+    @State var relocating: String = ""
+    @State var isNewTimeShown: Bool = false
     init(showPopover: Binding<Bool>) {
         _showPopover = showPopover
     }
@@ -23,9 +26,19 @@ struct CoordinationView: View {
             ZStack{
             if isGeneralQuestionShown{
                         GeneralQuestionView(showPopover: $isGeneralQuestionShown, ask: $asking)
-                            .transition(.move(edge: .leading))
+                            .transition(.move(edge: .trailing))
                             .animation(.spring())
         }
+                if isPlanRelocationShown{
+                    PlanRelocation(showPopover: $isPlanRelocationShown)
+                        .transition(.move(edge: .trailing))
+                        .animation(.spring())
+                }
+                if isNewTimeShown{
+                    SuggestTime(showPopover: $isNewTimeShown)
+                        .transition(.move(edge: .trailing))
+                        .animation(.spring())
+                }
             }
             .zIndex(2)
             VStack{
@@ -61,7 +74,7 @@ struct CoordinationView: View {
                 }
                 })
                 .buttonStyle(BorderlessButtonStyle())
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {isPlanRelocationShown.toggle()}, label: {
                     ZStack
                     {
                         GrayRoundedButton()
@@ -79,25 +92,7 @@ struct CoordinationView: View {
                 }
                 })
                 .buttonStyle(BorderlessButtonStyle())
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    ZStack
-                    {
-                        GrayRoundedButton()
-                            .frame(maxWidth:.infinity)
-                        HStack{
-                    Image(systemName:"clock.fill")
-                        .foregroundColor(.black)
-                    Text("Sugget a Different Time")
-                        .font(.custom("Avenir Medium", size: 18))
-                        .foregroundColor(.black)
-                            Image(systemName: "arrow.right")
-                                .foregroundColor(.black)
-                        }
-                        .padding(10)
-                }
-                })
-                .buttonStyle(BorderlessButtonStyle())
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {isNewTimeShown.toggle()}, label: {
                     ZStack
                     {
                         GrayRoundedButton()
@@ -105,7 +100,7 @@ struct CoordinationView: View {
                         HStack{
                     Image(systemName:"calendar")
                         .foregroundColor(.black)
-                    Text("Suggest a Different Date")
+                    Text("Sugget a Different Time or Date")
                         .font(.custom("Avenir Medium", size: 18))
                         .foregroundColor(.black)
                             Image(systemName: "arrow.right")
