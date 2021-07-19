@@ -7,26 +7,16 @@
 
 import SwiftUI
 
-struct EzDivider: View{
-    let color: Color = .gray
-    let width: CGFloat = 2
-    var body: some View{
-        Rectangle()
-            .fill(color)
-            .frame(height: width)
-            .edgesIgnoringSafeArea(.horizontal)
-    }
-}
-//Dividers
 
 struct OwnThoughts: View {
+    @State var thoughtsHistory: [String]
     var body: some View {
         ScrollView() {
             VStack(spacing:0) {
-                ForEach(myThoughts, id: \.self.name) {MyThought in
-                OneThoughtView(thought: MyThought.name)
+                ForEach(thoughtsHistory, id: \.self) {String in
+                    OneThoughtView(thought: String)
                 }
-                EzDivider()
+                NiceDivider()
             }
         }
     }
@@ -38,7 +28,7 @@ struct OneThoughtView: View{
     var thought: String
     var body: some View{
         VStack(alignment:.leading, spacing:0) {
-            EzDivider()
+            NiceDivider()
             Text(thought)
                 .lineLimit(nil)
                 .padding(.leading)
@@ -51,34 +41,8 @@ struct OneThoughtView: View{
 
 struct OwnThoughts_Previews: PreviewProvider {
     static var previews: some View {
-        OwnThoughts()
+        OwnThoughts(thoughtsHistory:
+            ["QWERTYUIOPASDFGHJKLZXCVBNM",
+            "qwerty"])
     }
 }
-
-//PlaceHolder for [Strings] that will contain a history of the user's own thoughts, recalled by Servers
-//the [Strings] mentioned above is called myThoughts
-struct MyThought{
-    let name: String
-}
-let myThoughts: [MyThought] = [
-    MyThought(name: "QWETqwertyuiopasdfghjklzxcvbnm,asdfgh"),
-    MyThought(name: "QWET"),
-    MyThought(name: "CVBN"),
-    MyThought(name: "GTYU"),
-    MyThought(name: "QWETqwertyuiopasdfghjklzxcvbnm,asdfgh"),
-    MyThought(name: "QWET"),
-    MyThought(name: "CVBN"),
-    MyThought(name: "GTYU"),
-    MyThought(name: "QWETqwertyuiopasdfghjklzxcvbnm,asdfgh"),
-    MyThought(name: "QWET"),
-    MyThought(name: "CVBN"),
-    MyThought(name: "GTYU"),
-    MyThought(name: "QWETqwertyuiopasdfghjklzxcvbnm,asdfgh"),
-    MyThought(name: "QWET"),
-    MyThought(name: "CVBN"),
-    MyThought(name: "GTYU"),
-    MyThought(name: "QWETqwertyuiopasdfghjklzxcvbnm,asdfgh"),
-    MyThought(name: "QWET"),
-    MyThought(name: "CVBN"),
-    MyThought(name: "GTYU"),
-    ]
