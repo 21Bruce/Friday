@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60C2DCDB26A497EE000ADC1E /* EventGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2DCDA26A497EE000ADC1E /* EventGrid.swift */; };
+		60C2DCDF26A497FA000ADC1E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2DCDC26A497FA000ADC1E /* SettingsView.swift */; };
+		60C2DCE026A497FA000ADC1E /* OrganizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2DCDD26A497FA000ADC1E /* OrganizerView.swift */; };
+		60C2DCE126A497FA000ADC1E /* CoordinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2DCDE26A497FA000ADC1E /* CoordinationView.swift */; };
+		60C2DCE326A49A02000ADC1E /* HelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2DCE226A49A02000ADC1E /* HelpScreen.swift */; };
 		78D5959826A3EFAF00F30174 /* Friday2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5959726A3EFAF00F30174 /* Friday2App.swift */; };
 		78D5959C26A3EFB000F30174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D5959B26A3EFB000F30174 /* Assets.xcassets */; };
 		78D5959F26A3EFB000F30174 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D5959E26A3EFB000F30174 /* Preview Assets.xcassets */; };
@@ -40,10 +45,16 @@
 		78D595E826A3FD3C00F30174 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78D595E726A3FD3C00F30174 /* GoogleService-Info.plist */; };
 		DDCD62BD26A5CE3800973A5A /* NiceDividers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD62BC26A5CE3800973A5A /* NiceDividers.swift */; };
 		DDCD62BF26A5CEEA00973A5A /* ProfileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD62BE26A5CEEA00973A5A /* ProfileIcon.swift */; };
+		DDBB11ED26A48E4900FA2BE7 /* OwnThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */; };
 		EB308BDA4BC8162DB5C56306 /* Pods_Friday2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC3DB50D2F92ED5FBB16743 /* Pods_Friday2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60C2DCDA26A497EE000ADC1E /* EventGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventGrid.swift; sourceTree = "<group>"; };
+		60C2DCDC26A497FA000ADC1E /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		60C2DCDD26A497FA000ADC1E /* OrganizerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizerView.swift; sourceTree = "<group>"; };
+		60C2DCDE26A497FA000ADC1E /* CoordinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinationView.swift; sourceTree = "<group>"; };
+		60C2DCE226A49A02000ADC1E /* HelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpScreen.swift; sourceTree = "<group>"; };
 		70071E1E8382BB09EB6E93B4 /* Pods-Friday2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friday2.release.xcconfig"; path = "Target Support Files/Pods-Friday2/Pods-Friday2.release.xcconfig"; sourceTree = "<group>"; };
 		78D5959426A3EFAF00F30174 /* Friday2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friday2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D5959726A3EFAF00F30174 /* Friday2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friday2App.swift; sourceTree = "<group>"; };
@@ -83,6 +94,7 @@
 		CEF54DA5A1B1CB186E08A39B /* Pods-Friday2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friday2.debug.xcconfig"; path = "Target Support Files/Pods-Friday2/Pods-Friday2.debug.xcconfig"; sourceTree = "<group>"; };
 		DDCD62BC26A5CE3800973A5A /* NiceDividers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceDividers.swift; sourceTree = "<group>"; };
 		DDCD62BE26A5CEEA00973A5A /* ProfileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIcon.swift; sourceTree = "<group>"; };
+		DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnThoughts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +217,9 @@
 		78D595BB26A3F62D00F30174 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				60C2DCDE26A497FA000ADC1E /* CoordinationView.swift */,
+				60C2DCDD26A497FA000ADC1E /* OrganizerView.swift */,
+				60C2DCDC26A497FA000ADC1E /* SettingsView.swift */,
 				78D595BC26A3F63A00F30174 /* PostView.swift */,
 				78D595BE26A3F65500F30174 /* Invitation.swift */,
 				78D595C026A3F67500F30174 /* FriendPostView.swift */,
@@ -214,6 +229,7 @@
 				78D595C826A3F6C800F30174 /* Profile */,
 				78D595CF26A3F72D00F30174 /* ConfirmUsersView.swift */,
 				78D595D126A3F74E00F30174 /* UserSocialMapView.swift */,
+				60C2DCE226A49A02000ADC1E /* HelpScreen.swift */,
 				78D595D326A3F77600F30174 /* LoginView.swift */,
 				78D595D526A3F78A00F30174 /* FriendRequestView.swift */,
 				78D595D726A3F7AA00F30174 /* AccountCreationView.swift */,
@@ -221,6 +237,7 @@
 				78D595DB26A3F7D900F30174 /* ProfileSelection.swift */,
 				78D595DD26A3F7E900F30174 /* Components */,
 				78D595E426A3F84500F30174 /* PhotoLibrary.swift */,
+				DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +245,7 @@
 		78D595C826A3F6C800F30174 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				60C2DCDA26A497EE000ADC1E /* EventGrid.swift */,
 				78D595C926A3F6D700F30174 /* ProfileView.swift */,
 				78D595CB26A3F6EF00F30174 /* ProfileTabView.swift */,
 				78D595CD26A3F70C00F30174 /* ProfilePopover.swift */,
@@ -381,21 +399,27 @@
 				78D595BA26A3F5E000F30174 /* MathExtensions.swift in Sources */,
 				78D595E326A3F82A00F30174 /* ErrorButtonWrapper.swift in Sources */,
 				78D595E526A3F84500F30174 /* PhotoLibrary.swift in Sources */,
+				DDBB11ED26A48E4900FA2BE7 /* OwnThoughts.swift in Sources */,
 				78D595C326A3F68900F30174 /* IconView.swift in Sources */,
 				78D595B326A3F57600F30174 /* UserSocialMap.swift in Sources */,
 				78D595CE26A3F70C00F30174 /* ProfilePopover.swift in Sources */,
 				DDCD62BF26A5CEEA00973A5A /* ProfileIcon.swift in Sources */,
+				60C2DCE026A497FA000ADC1E /* OrganizerView.swift in Sources */,
 				78D595C126A3F67500F30174 /* FriendPostView.swift in Sources */,
 				78D595B826A3F5CA00F30174 /* UIExtensions.swift in Sources */,
 				78D595B626A3F5AF00F30174 /* IdentifiableExtensions.swift in Sources */,
 				78D595DA26A3F7C000F30174 /* MapWrapperView.swift in Sources */,
+				60C2DCDB26A497EE000ADC1E /* EventGrid.swift in Sources */,
 				78D595E026A3F80900F30174 /* RingSelection.swift in Sources */,
 				78D595CC26A3F6EF00F30174 /* ProfileTabView.swift in Sources */,
+				60C2DCDF26A497FA000ADC1E /* SettingsView.swift in Sources */,
 				78D595CA26A3F6D700F30174 /* ProfileView.swift in Sources */,
 				DDCD62BD26A5CE3800973A5A /* NiceDividers.swift in Sources */,
 				78D595AA26A3F4E600F30174 /* PlanUserConfirmationLayout.swift in Sources */,
 				78D595D626A3F78A00F30174 /* FriendRequestView.swift in Sources */,
+				60C2DCE326A49A02000ADC1E /* HelpScreen.swift in Sources */,
 				78D595A826A3F4C700F30174 /* PlanCollectionLayout.swift in Sources */,
+				60C2DCE126A497FA000ADC1E /* CoordinationView.swift in Sources */,
 				78D595C526A3F6A200F30174 /* UserRing.swift in Sources */,
 				78D595D826A3F7AA00F30174 /* AccountCreationView.swift in Sources */,
 				78D595BF26A3F65500F30174 /* Invitation.swift in Sources */,

@@ -16,14 +16,12 @@ let Pi: CGFloat = CGFloat.pi
 let RadianOffset: CGFloat = 0
 let DefaultRingRadius: CGFloat = 100
 let DefaultRingRadiusExtension: CGFloat = 80
-let DefaultBubbleRadius = DefaultRingRadius * 0.7
+let DefaultBubbleRadius = DefaultRingRadius * 0.65
 let DefaultIconRadius: CGFloat = 20
 let DefaultMainUserIconRadius: CGFloat = 35
-let DefaultPlanSelectionRadius: CGFloat = 30
+let DefaultPlanSelectionRadius: CGFloat = 26
 let scaledCoordSystem: CGFloat = 0.5
 let BubbleDetectionRingRadius = DefaultBubbleRadius
 let IconRingColor: Color = .black
 let IconRingOpacity: Double = 0.8
 let IconLineWidth: CGFloat = 3
-
-
