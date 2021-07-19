@@ -36,18 +36,8 @@ struct IconView: View {
         
         ZStack {
             GeometryReader{ geometry in
-                Group{
-                    Image(uiImage: User.profilePic)
-                        .resizable()
-                        .clipShape(Circle())
-                        .aspectRatio(1, contentMode: .fit)
-                        .frame(width: 2 * Radius, height: 2 * Radius)
-                    Circle()
-                        .stroke(lineWidth: IconLineWidth)
-                        .foregroundColor(IconRingColor)
-                        .opacity(IconRingOpacity)
-                        .frame(width: 2 * Radius, height: 2 * Radius)
-                }
+                ProfileIcon(uiImage: User.profilePic)
+                .frame(width: 2 * Radius, height: 2 * Radius)
                 .onTapGesture {
                     Mixpanel.mainInstance().track(event: "Viewed Thought")
                     if(!isPlanSelecting){
