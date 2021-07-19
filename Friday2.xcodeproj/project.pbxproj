@@ -46,9 +46,11 @@
 		78D595E026A3F80900F30174 /* RingSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D595DF26A3F80900F30174 /* RingSelection.swift */; };
 		78D595E526A3F84500F30174 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D595E426A3F84500F30174 /* PhotoLibrary.swift */; };
 		78D595E826A3FD3C00F30174 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78D595E726A3FD3C00F30174 /* GoogleService-Info.plist */; };
+		DDBB11ED26A48E4900FA2BE7 /* OwnThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */; };
 		DDCD62BD26A5CE3800973A5A /* NiceDividers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD62BC26A5CE3800973A5A /* NiceDividers.swift */; };
 		DDCD62BF26A5CEEA00973A5A /* ProfileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD62BE26A5CEEA00973A5A /* ProfileIcon.swift */; };
-		DDBB11ED26A48E4900FA2BE7 /* OwnThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */; };
+		DDCD62C826A5F83700973A5A /* NiceDividers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD62C726A5F83700973A5A /* NiceDividers.swift */; };
+		DDCD62CA26A5F83A00973A5A /* ProfileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD62C926A5F83A00973A5A /* ProfileIcon.swift */; };
 		EB308BDA4BC8162DB5C56306 /* Pods_Friday2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC3DB50D2F92ED5FBB16743 /* Pods_Friday2.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,9 +100,11 @@
 		78D595E726A3FD3C00F30174 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CC3DB50D2F92ED5FBB16743 /* Pods_Friday2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Friday2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF54DA5A1B1CB186E08A39B /* Pods-Friday2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friday2.debug.xcconfig"; path = "Target Support Files/Pods-Friday2/Pods-Friday2.debug.xcconfig"; sourceTree = "<group>"; };
+		DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnThoughts.swift; sourceTree = "<group>"; };
 		DDCD62BC26A5CE3800973A5A /* NiceDividers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceDividers.swift; sourceTree = "<group>"; };
 		DDCD62BE26A5CEEA00973A5A /* ProfileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIcon.swift; sourceTree = "<group>"; };
-		DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnThoughts.swift; sourceTree = "<group>"; };
+		DDCD62C726A5F83700973A5A /* NiceDividers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceDividers.swift; sourceTree = "<group>"; };
+		DDCD62C926A5F83A00973A5A /* ProfileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 		60C2DCE726A4CCB7000ADC1E /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				DDCD62C726A5F83700973A5A /* NiceDividers.swift */,
+				DDCD62C926A5F83A00973A5A /* ProfileIcon.swift */,
 				60C2DCE826A4CCD8000ADC1E /* ExitButton.swift */,
 			);
 			path = Buttons;
@@ -159,6 +165,7 @@
 				78D5959526A3EFAF00F30174 /* Products */,
 				4210499F98C9ED539E32D86C /* Pods */,
 				2AB46FBA10EB8E49B2D930DA /* Frameworks */,
+				DDCD62C126A5EC8500973A5A /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,14 +302,13 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		78D595E126A3F81400F30174 /* Wrappers */ = {
+		DDCD62C126A5EC8500973A5A /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				78D595E226A3F82A00F30174 /* ErrorButtonWrapper.swift */,
-				DDCD62BC26A5CE3800973A5A /* NiceDividers.swift */,
 				DDCD62BE26A5CEEA00973A5A /* ProfileIcon.swift */,
+				DDCD62BC26A5CE3800973A5A /* NiceDividers.swift */,
 			);
-			path = Wrappers;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +455,7 @@
 				78D595A826A3F4C700F30174 /* PlanCollectionLayout.swift in Sources */,
 				60C2DCE126A497FA000ADC1E /* CoordinationView.swift in Sources */,
 				78D595C526A3F6A200F30174 /* UserRing.swift in Sources */,
+				DDCD62C826A5F83700973A5A /* NiceDividers.swift in Sources */,
 				78D595D826A3F7AA00F30174 /* AccountCreationView.swift in Sources */,
 				78D595BF26A3F65500F30174 /* Invitation.swift in Sources */,
 				78D595D426A3F77600F30174 /* LoginView.swift in Sources */,
@@ -457,6 +464,7 @@
 				78D5959826A3EFAF00F30174 /* Friday2App.swift in Sources */,
 				78D595D226A3F74E00F30174 /* UserSocialMapView.swift in Sources */,
 				78D595D026A3F72D00F30174 /* ConfirmUsersView.swift in Sources */,
+				DDCD62CA26A5F83A00973A5A /* ProfileIcon.swift in Sources */,
 				78D595C726A3F6BA00F30174 /* PlanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
