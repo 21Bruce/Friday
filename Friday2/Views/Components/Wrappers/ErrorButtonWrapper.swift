@@ -37,3 +37,9 @@ struct ExitButtonWrapper<Wrapped: View>: View {
 }
 
 
+
+
+
+
+
+// This is annoying
