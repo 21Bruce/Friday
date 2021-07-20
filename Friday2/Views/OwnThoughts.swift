@@ -16,7 +16,6 @@ struct OwnThoughts: View {
                 ForEach(thoughtsHistory, id: \.self) {String in
                     OneThoughtView(thought: String)
                 }
-                NiceDivider()
             }
         }
     }
@@ -28,12 +27,12 @@ struct OneThoughtView: View{
     var thought: String
     var body: some View{
         VStack(alignment:.leading, spacing:0) {
-            NiceDivider()
             Text(thought)
                 .lineLimit(nil)
                 .padding(.leading)
                 .padding(.trailing)
                 .font(.title)
+            NiceDivider()
         }
     }
 }

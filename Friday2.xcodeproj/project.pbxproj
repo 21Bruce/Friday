@@ -47,8 +47,6 @@
 		78D595E526A3F84500F30174 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D595E426A3F84500F30174 /* PhotoLibrary.swift */; };
 		78D595E826A3FD3C00F30174 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78D595E726A3FD3C00F30174 /* GoogleService-Info.plist */; };
 		DDBB11ED26A48E4900FA2BE7 /* OwnThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */; };
-		DDCD62BD26A5CE3800973A5A /* NiceDividers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD62BC26A5CE3800973A5A /* NiceDividers.swift */; };
-		DDCD62BF26A5CEEA00973A5A /* ProfileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD62BE26A5CEEA00973A5A /* ProfileIcon.swift */; };
 		DDCD62C826A5F83700973A5A /* NiceDividers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD62C726A5F83700973A5A /* NiceDividers.swift */; };
 		DDCD62CA26A5F83A00973A5A /* ProfileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD62C926A5F83A00973A5A /* ProfileIcon.swift */; };
 		EB308BDA4BC8162DB5C56306 /* Pods_Friday2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC3DB50D2F92ED5FBB16743 /* Pods_Friday2.framework */; };
@@ -101,8 +99,6 @@
 		8CC3DB50D2F92ED5FBB16743 /* Pods_Friday2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Friday2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF54DA5A1B1CB186E08A39B /* Pods-Friday2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friday2.debug.xcconfig"; path = "Target Support Files/Pods-Friday2/Pods-Friday2.debug.xcconfig"; sourceTree = "<group>"; };
 		DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnThoughts.swift; sourceTree = "<group>"; };
-		DDCD62BC26A5CE3800973A5A /* NiceDividers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceDividers.swift; sourceTree = "<group>"; };
-		DDCD62BE26A5CEEA00973A5A /* ProfileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIcon.swift; sourceTree = "<group>"; };
 		DDCD62C726A5F83700973A5A /* NiceDividers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceDividers.swift; sourceTree = "<group>"; };
 		DDCD62C926A5F83A00973A5A /* ProfileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -305,8 +301,6 @@
 		DDCD62C126A5EC8500973A5A /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				DDCD62BE26A5CEEA00973A5A /* ProfileIcon.swift */,
-				DDCD62BC26A5CE3800973A5A /* NiceDividers.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -434,7 +428,6 @@
 				78D595C326A3F68900F30174 /* IconView.swift in Sources */,
 				78D595B326A3F57600F30174 /* UserSocialMap.swift in Sources */,
 				78D595CE26A3F70C00F30174 /* ProfilePopover.swift in Sources */,
-				DDCD62BF26A5CEEA00973A5A /* ProfileIcon.swift in Sources */,
 				60C2DCE026A497FA000ADC1E /* OrganizerView.swift in Sources */,
 				78D595C126A3F67500F30174 /* FriendPostView.swift in Sources */,
 				78D595B826A3F5CA00F30174 /* UIExtensions.swift in Sources */,
@@ -446,7 +439,6 @@
 				78D595CC26A3F6EF00F30174 /* ProfileTabView.swift in Sources */,
 				60C2DCDF26A497FA000ADC1E /* SettingsView.swift in Sources */,
 				78D595CA26A3F6D700F30174 /* ProfileView.swift in Sources */,
-				DDCD62BD26A5CE3800973A5A /* NiceDividers.swift in Sources */,
 				60C2DCED26A5B809000ADC1E /* PlanRelocation.swift in Sources */,
 				78D595AA26A3F4E600F30174 /* PlanUserConfirmationLayout.swift in Sources */,
 				78D595D626A3F78A00F30174 /* FriendRequestView.swift in Sources */,
