@@ -410,8 +410,14 @@ struct ShareThoughts: View {
         UITextView.appearance().backgroundColor = .clear
     }
     var body : some View {
-        ExitButtonWrapper(onSubmit: {withAnimation(){showPopover = false}}){
+        
             VStack{
+                HStack{
+                    Spacer()
+                    ExitButton(onSubmit: {showPopover = false})
+                    .padding(10)
+                        .frame(width: 30, height: 30)
+                }
                 ZStack(alignment:.topLeading){
                     if share.isEmpty{
                         Text("Share your thoughts...")
@@ -446,7 +452,7 @@ struct ShareThoughts: View {
                 })
             }
             
-        }
+        
     }
         
 }
