@@ -31,7 +31,7 @@ struct OneThoughtView: View{
                 .lineLimit(nil)
                 .padding(.leading)
                 .padding(.trailing)
-                .font(.title)
+                .font(.custom("Avenir Medium", size:30))
             NiceDivider()
         }
     }

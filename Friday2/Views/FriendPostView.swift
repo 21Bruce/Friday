@@ -15,15 +15,27 @@ struct FriendPostModifiedView: View {
     var body: some View {
         GeometryReader{geometry in
             VStack(spacing:0) {
-                HStack(){
+                ZStack() {
                     ProfileIcon(uiImage: profilePic)
                         .frame(width: 200, height:230)
-                    ExitButton(onSubmit: )
+                    HStack{
+                        Spacer()
+                        VStack{
+                            Image(systemName: "xmark.circle.fill")
+                                .resizable()
+                                .foregroundColor(.red)
+                                .buttonStyle(BorderlessButtonStyle())
+//The ExitButton struct goes above, when ready for implementation
+                                .frame(width: 25, height: 25)
+                                .padding(10)
+                            Spacer()
+                        }
+                    }
                 }
-                
+                .frame(height:230)
                 Text(username + " is thinking:")
                     .multilineTextAlignment(.leading)
-                    .font(.title)
+                    .font(.custom("Avenir Medium", size:40))
                     .lineLimit(nil)
                     .padding(.horizontal)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -64,7 +76,7 @@ struct FriendPostModifiedContainerView_Preview: PreviewProvider {
         FriendPostModifiedContainerView(thoughtsHistory:[
             "qwertyuiopasdfghjkzxcvbnm",
             "Q",
-            "w",
+            "ezsxrtyunytdfuvygbiygubygbuygbvuygbvuygvuyvuygvuygvyugvuyvguygvuygvygvygvygvgyvyggvy",
             "e",
             "r",
             "t",
