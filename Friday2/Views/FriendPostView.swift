@@ -10,22 +10,30 @@ import SwiftUI
 struct FriendPostModifiedView: View {
     @Binding var thoughtsHistory: [String]
     @Binding var username: String
+    @Binding var profilePic: UIImage
 
     var body: some View {
         GeometryReader{geometry in
-            VStack(spacing:0){
+            VStack(spacing:0) {
+                HStack(){
+                    ProfileIcon(uiImage: profilePic)
+                        .frame(width: 200, height:230)
+                    ExitButton(onSubmit: )
+                }
+                
                 Text(username + " is thinking:")
-                    .font(.title)
                     .multilineTextAlignment(.leading)
+                    .font(.title)
                     .lineLimit(nil)
                     .padding(.horizontal)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 NiceDivider()
                 OwnThoughts(thoughtsHistory: thoughtsHistory)
-                }
             }
+        }
     }
 }
+
 
 
 
@@ -44,14 +52,12 @@ struct FriendPostModifiedView: View {
 struct FriendPostModifiedContainerView: View {
     @State var thoughtsHistory: [String]
     @State var username: String
+    @State var profilePic: UIImage
     
     var body: some View{
-        FriendPostModifiedView(thoughtsHistory: $thoughtsHistory, username: $username)
+        FriendPostModifiedView(thoughtsHistory: $thoughtsHistory, username: $username, profilePic: $profilePic)
     }
-    
 }
-
-
 
 struct FriendPostModifiedContainerView_Preview: PreviewProvider {
     static var previews: some View {
@@ -67,7 +73,8 @@ struct FriendPostModifiedContainerView_Preview: PreviewProvider {
             "i",
             "o",
             ],
-        username: "Cuppy")
+            username: "Cuppy",
+            profilePic: UIImage(systemName: "heart.fill")!)
     }
 }
 
