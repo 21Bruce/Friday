@@ -65,7 +65,7 @@ struct Invitations: View {
                                 .padding(10)
                                 Button(action: {rejectRequest(invitationID)}, label: {
                                     ZStack{
-                                        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                                        RoundedRectangle(cornerRadius: 25.0)
                                             .foregroundColor(Color(red: 255/255 , green:100/255, blue:100/255))
                                         Text("No")
                                             .font(.custom("Avenir Medium", size: 18))

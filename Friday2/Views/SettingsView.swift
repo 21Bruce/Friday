@@ -40,7 +40,7 @@ struct SettingsView: View {
                             Image(systemName: "camera.circle.fill")
                                 .foregroundColor(.black)
                             Text("Change Profile Picture")
-                                .font(.custom("Avenir Medium", size: 18))
+                                .font(.custom("Avenir Medium", size: 18)) 
                                 .foregroundColor(.black)
                                     Image(systemName: "arrow.right")
                                         .foregroundColor(.black)

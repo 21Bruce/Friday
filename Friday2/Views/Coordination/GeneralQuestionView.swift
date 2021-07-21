@@ -53,7 +53,21 @@ struct GeneralQuestionView: View {
                     }
                     
         }
-    
+            Button(action:{}, label: {
+                ZStack{
+                    GrayRoundedButton()
+                        .frame(height:80)
+                    HStack{
+                        Image(systemName: "questionmark.circle")
+                            .foregroundColor(.black)
+                    Text("Send Question")
+                        .font(.custom("Avenir Medium", size: 18))
+                        .foregroundColor(.black)
+                    }
+                }
+                .padding(10)
+            })
+            .buttonStyle(BorderlessButtonStyle())
 }
     }
 }
