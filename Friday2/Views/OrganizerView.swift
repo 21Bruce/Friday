@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct OrganizerView: View {
+    @Binding var acceptedUsers: [UIImage]
+    @Binding var pendingUsers: [UIImage]
+    @Binding var rejectedUsers: [UIImage]
+    
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .top)){
-           ColumnHolder()
+            ColumnHolder()
             OrganizerText()
             VStack(spacing:0){
-            Column()
-                .frame(width:125)
+                Column()
+                    .frame(width:125)
                 Rectangle()
                     .frame(width:350, height:1)
                 Spacer()
@@ -29,19 +33,18 @@ struct OrganizerView: View {
 struct OrganizerText:View{
     var body: some View{
         VStack{
-    HStack{
-        Text("Accepted")
-            .padding(20)
-            Text("Pending")
-                .padding(20)
-        Text("Rejected")
-            .padding(20)
-    }
+            HStack{
+                Text("Accepted")
+                    .padding(20)
+                Text("Pending")
+                    .padding(20)
+                Text("Rejected")
+                    .padding(20)
+            }
             Rectangle()
                 .frame(height:1)
-            
-}
-}
+        }
+    }
 }
 struct ColumnHolder: View{
     var body: some View{
