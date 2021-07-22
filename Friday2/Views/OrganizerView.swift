@@ -74,7 +74,7 @@ struct OrganizerViewText: View {
             .frame(maxWidth: .infinity)
             .font(.custom("Avenir Medium", size:textSize))
             .padding()
-            NiceDivider()
+            CNiceDividers(Color: .black, Width: 2)
             ScrollView{
                 HStack{
                     VStack(spacing: profileSpacing){
