@@ -134,15 +134,6 @@ struct ProfilePicwName: View{
 
 
 
-
-
-
-
-
-
-
-
-
 //MARK: DO NOT TOUCH
 
 #if DEBUG
@@ -181,11 +172,6 @@ struct OrganizerView_Previews: PreviewProvider {
 }
 
 #endif
-
-
-
-
-
 
 
 
