@@ -39,7 +39,8 @@ struct SuggestTime: View {
             RoundedRectangle(cornerRadius: 25.0)
                 .stroke()
                 .foregroundColor(.black)
-                .frame(width: 400, height: 400)
+                .frame(height: 400)
+                .padding(10)
             VStack{
                 DatePicker(
                         "Start Date",
