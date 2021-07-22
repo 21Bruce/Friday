@@ -8,20 +8,29 @@
 import SwiftUI
 
 struct OrganizerView: View {
-    @Binding var acceptedUsers: [UIImage]
-    @Binding var pendingUsers: [UIImage]
-    @Binding var rejectedUsers: [UIImage]
+    var frameHeight: CGFloat = 500
+    var frameWidth: CGFloat = 350
+    
+    @Binding var acceptedImgs: [String: UIImage]
+    @Binding var acceptedNames: [String]
+    @Binding var pendingImgs: [String: UIImage]
+    @Binding var pendingNames: [String]
+    @Binding var rejectedImgs: [String: UIImage]
+    @Binding var rejectedNames: [String]
 
     var body: some View {
         ZStack{
             OrganizerViewBackground()
             OrganizerViewText(
-                acceptedUsers: acceptedUsers,
-                pendingUsers: pendingUsers,
-                rejectedUsers: rejectedUsers
+                acceptedImgs: acceptedImgs,
+                acceptedNames: acceptedNames,
+                pendingImgs: pendingImgs,
+                pendingNames: pendingNames,
+                rejectedImgs: rejectedImgs,
+                rejectedNames: rejectedNames
             )
         }
-        .frame(width: 350, height: 500)
+        .frame(width: frameWidth, height: frameHeight)
     }
 }
 
@@ -42,12 +51,15 @@ struct OrganizerViewBackground: View{
 }
 
 struct OrganizerViewText: View {
-    var acceptedUsers: [UIImage]
-    var pendingUsers: [UIImage]
-    var rejectedUsers: [UIImage]
     var profileSpacing: CGFloat = 10
-    var profilePicSize: CGFloat = 50
-    var textSize: CGFloat = 15
+    var textSize: CGFloat = 20
+
+    var acceptedImgs: [String: UIImage]
+    var acceptedNames: [String]
+    var pendingImgs: [String: UIImage]
+    var pendingNames:[String]
+    var rejectedImgs: [String: UIImage]
+    var rejectedNames: [String]
 
     var body: some View{
         VStack(spacing:0){
@@ -66,23 +78,29 @@ struct OrganizerViewText: View {
             ScrollView{
                 HStack{
                     VStack(spacing: profileSpacing){
-                        ForEach(acceptedUsers, id: \.self) {UIImage in
-                            ProfileIcon(uiImage: UIImage)
-                                .frame(width: profilePicSize, height: profilePicSize)
+                        ForEach(acceptedNames, id: \.self) {String in
+                            ProfilePicwName(
+                                userName: String,
+                                userPic: acceptedImgs[String]!
+                            )
                         }
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
                     VStack(spacing: profileSpacing){
-                        ForEach(pendingUsers, id: \.self) {UIImage in
-                            ProfileIcon(uiImage: UIImage)
-                                .frame(width: profilePicSize, height: profilePicSize)
+                        ForEach(pendingNames, id: \.self) {String in
+                            ProfilePicwName(
+                                userName: String,
+                                userPic: pendingImgs[String]!
+                            )
                         }
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
                     VStack(spacing: profileSpacing){
-                        ForEach(rejectedUsers, id: \.self) {UIImage in
-                            ProfileIcon(uiImage: UIImage)
-                                .frame(width: profilePicSize, height: profilePicSize)
+                        ForEach(rejectedNames, id: \.self) {String in
+                            ProfilePicwName(
+                                userName: String,
+                                userPic: rejectedImgs[String]!
+                            )
                         }
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
@@ -97,26 +115,67 @@ struct OrganizerViewText: View {
     }
 }
 
+struct ProfilePicwName: View{
+    var profilePicSize: CGFloat = 50
+    var userTextSize: CGFloat = 15
+    var spaceInPicwName: CGFloat = 2
+    @State var userName: String
+    @State var userPic: UIImage
+    
+    var body: some View {
+        VStack(spacing:spaceInPicwName){
+            ProfileIcon(uiImage:userPic)
+                .frame(width: profilePicSize, height: profilePicSize)
+            Text(userName)
+                .font(.custom("Avenir Medium", size:userTextSize))
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 //MARK: DO NOT TOUCH
 
 #if DEBUG
 
 struct OrganizerViewContainerPreview: View {
-    @State var acceptedUsers: [UIImage]
-    @State var pendingUsers: [UIImage]
-    @State var rejectedUsers: [UIImage]
+    @State var acceptedImgs: [String: UIImage]
+    @State var acceptedNames: [String]
+    @State var pendingImgs: [String: UIImage]
+    @State var pendingNames: [String]
+    @State var rejectedImgs: [String: UIImage]
+    @State var rejectedNames: [String]
 
     var body: some View {
-        OrganizerView(acceptedUsers: $acceptedUsers, pendingUsers: $pendingUsers, rejectedUsers: $rejectedUsers)
+        OrganizerView(
+            acceptedImgs: $acceptedImgs,
+            acceptedNames: $acceptedNames,
+            pendingImgs: $pendingImgs,
+            pendingNames: $pendingNames,
+            rejectedImgs: $rejectedImgs,
+            rejectedNames: $rejectedNames
+        )
     }
 }
 
 struct OrganizerView_Previews: PreviewProvider {
     static var previews: some View {
         OrganizerViewContainerPreview(
-            acceptedUsers: [UIImage(systemName: "heart.fill")!],
-            pendingUsers: [UIImage(systemName: "heart.fill")!],
-            rejectedUsers: [UIImage(systemName: "heart.fill")!]
+            acceptedImgs: ["Cuppy": UIImage(systemName: "heart.fill")!],
+            acceptedNames: ["Cuppy"],
+            pendingImgs: ["Coco": UIImage(systemName: "heart.fill")!],
+            pendingNames: ["Coco"],
+            rejectedImgs: ["Obama": UIImage(systemName: "heart.fill")!],
+            rejectedNames: ["Obama"]
         )
     }
 }
