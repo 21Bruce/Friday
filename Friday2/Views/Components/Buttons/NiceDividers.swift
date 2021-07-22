@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct NiceDivider: View{
-    let color: Color = .gray
-    let width: CGFloat = 2
     var body: some View{
         Rectangle()
-            .fill(color)
-            .frame(height: width)
+            .fill(Color.gray)
+            .frame(height: 2)
             .edgesIgnoringSafeArea(.horizontal)
     }
 }

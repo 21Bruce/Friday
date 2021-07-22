@@ -46,6 +46,7 @@
 		78D595E026A3F80900F30174 /* RingSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D595DF26A3F80900F30174 /* RingSelection.swift */; };
 		78D595E526A3F84500F30174 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D595E426A3F84500F30174 /* PhotoLibrary.swift */; };
 		78D595E826A3FD3C00F30174 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78D595E726A3FD3C00F30174 /* GoogleService-Info.plist */; };
+		DD5C7DB526A9F858001CC413 /* CNiceDividers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C7DB426A9F857001CC413 /* CNiceDividers.swift */; };
 		DDBB11ED26A48E4900FA2BE7 /* OwnThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */; };
 		DDCD62C826A5F83700973A5A /* NiceDividers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD62C726A5F83700973A5A /* NiceDividers.swift */; };
 		DDCD62CA26A5F83A00973A5A /* ProfileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD62C926A5F83A00973A5A /* ProfileIcon.swift */; };
@@ -98,6 +99,7 @@
 		78D595E726A3FD3C00F30174 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CC3DB50D2F92ED5FBB16743 /* Pods_Friday2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Friday2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF54DA5A1B1CB186E08A39B /* Pods-Friday2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friday2.debug.xcconfig"; path = "Target Support Files/Pods-Friday2/Pods-Friday2.debug.xcconfig"; sourceTree = "<group>"; };
+		DD5C7DB426A9F857001CC413 /* CNiceDividers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNiceDividers.swift; sourceTree = "<group>"; };
 		DDBB11EC26A48E4900FA2BE7 /* OwnThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnThoughts.swift; sourceTree = "<group>"; };
 		DDCD62C726A5F83700973A5A /* NiceDividers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceDividers.swift; sourceTree = "<group>"; };
 		DDCD62C926A5F83A00973A5A /* ProfileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIcon.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				DDCD62C726A5F83700973A5A /* NiceDividers.swift */,
 				DDCD62C926A5F83A00973A5A /* ProfileIcon.swift */,
 				60C2DCE826A4CCD8000ADC1E /* ExitButton.swift */,
+				DD5C7DB426A9F857001CC413 /* CNiceDividers.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				60C2DCDB26A497EE000ADC1E /* EventGrid.swift in Sources */,
 				78D595E026A3F80900F30174 /* RingSelection.swift in Sources */,
 				78D595CC26A3F6EF00F30174 /* ProfileTabView.swift in Sources */,
+				DD5C7DB526A9F858001CC413 /* CNiceDividers.swift in Sources */,
 				60C2DCDF26A497FA000ADC1E /* SettingsView.swift in Sources */,
 				78D595CA26A3F6D700F30174 /* ProfileView.swift in Sources */,
 				60C2DCED26A5B809000ADC1E /* PlanRelocation.swift in Sources */,
