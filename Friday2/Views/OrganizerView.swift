@@ -8,30 +8,21 @@
 import SwiftUI
 
 struct OrganizerView: View {
-    var acceptedUsers: [UIImage] =
-        [UIImage(systemName: "heart.fill")!,
-         UIImage(systemName: "heart.fill")!,
-         UIImage(systemName: "heart.fill")!,
-         UIImage(systemName: "heart.fill")!,
-         UIImage(systemName: "heart.fill")!,
-         UIImage(systemName: "heart.fill")!,
-         UIImage(systemName: "heart.fill")!,
-         UIImage(systemName: "heart.fill")!,
-         UIImage(systemName: "heart.fill")!,
-         UIImage(systemName: "heart.fill")!
-        ]
-    var pendingUsers: [UIImage] = [UIImage(systemName: "heart.fill")!, UIImage(systemName: "heart.fill")!]
-    var rejectedUsers: [UIImage] = [UIImage(systemName: "heart.fill")!]
-//OLD CODE STARTED HERE, COPY ONTO LINE BELOW
+    @Binding var acceptedUsers: [UIImage]
+    @Binding var pendingUsers: [UIImage]
+    @Binding var rejectedUsers: [UIImage]
+
     var body: some View {
         ZStack{
             OrganizerViewBackground()
-            OrganizerViewText(acceptedUsers: acceptedUsers, pendingUsers: pendingUsers, rejectedUsers: rejectedUsers)
+            OrganizerViewText(
+                acceptedUsers: acceptedUsers,
+                pendingUsers: pendingUsers,
+                rejectedUsers: rejectedUsers
+            )
         }
         .frame(width: 350, height: 500)
     }
-    
-
 }
 
 struct OrganizerViewBackground: View{
@@ -42,7 +33,7 @@ struct OrganizerViewBackground: View{
     var body: some View{
         ZStack{
             RoundedRectangle(cornerRadius: cornerRadius)
-            .foregroundColor(rectangleColor)
+                .foregroundColor(rectangleColor)
             RoundedRectangle(cornerRadius: cornerRadius)
                 .stroke()
                 .foregroundColor(borderColor)
@@ -106,33 +97,26 @@ struct OrganizerViewText: View {
     }
 }
 
-struct OrganizerView_Previews: PreviewProvider {
-    static var previews: some View {
-        OrganizerView()
-    }
-}
-
-
-
-
-
-
+//MARK: DO NOT TOUCH
 
 #if DEBUG
 
 struct OrganizerViewContainerPreview: View {
     @State var acceptedUsers: [UIImage]
+    @State var pendingUsers: [UIImage]
+    @State var rejectedUsers: [UIImage]
 
     var body: some View {
-        OrganizerView(acceptedUsers: $acceptedUsers)
+        OrganizerView(acceptedUsers: $acceptedUsers, pendingUsers: $pendingUsers, rejectedUsers: $rejectedUsers)
     }
 }
 
 struct OrganizerView_Previews: PreviewProvider {
     static var previews: some View {
-        OrganizerView(acceptedUsers: [
-                UIImage(systemName: "heart.fill")
-            ]
+        OrganizerViewContainerPreview(
+            acceptedUsers: [UIImage(systemName: "heart.fill")!],
+            pendingUsers: [UIImage(systemName: "heart.fill")!],
+            rejectedUsers: [UIImage(systemName: "heart.fill")!]
         )
     }
 }
