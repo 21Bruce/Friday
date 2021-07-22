@@ -28,10 +28,12 @@ struct PlanRelocation: View {
                 RoundedRectangle(cornerRadius: 25.0)
                     .stroke()
                     .foregroundColor(.black)
+                    
                 HStack{
                     Image(systemName: "mappin.and.ellipse")
                     TextField("Relocate Plan ...", text: $relocationText)
                 }
+                .padding(10)
                 
             }
             .frame(height:50)

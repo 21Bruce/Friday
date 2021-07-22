@@ -56,7 +56,6 @@ struct GeneralQuestionView: View {
             Button(action:{}, label: {
                 ZStack{
                     GrayRoundedButton()
-                        .frame(height:80)
                     HStack{
                         Image(systemName: "questionmark.circle")
                             .foregroundColor(.black)
@@ -68,6 +67,7 @@ struct GeneralQuestionView: View {
                 .padding(10)
             })
             .buttonStyle(BorderlessButtonStyle())
+            .frame(height:60)
 }
     }
 }

@@ -14,8 +14,11 @@ struct FriendRequestView: View {
     @Binding var isDisplayed: Bool
     
     var body: some View {
+        HStack{
+            Spacer()
         ExitButton(onSubmit:{isDisplayed = false})
             .frame(width: 30, height: 30)
+        }
             VStack{
                     GeometryReader{geometry in
                     Text(Map.friendInbox.isEmpty ? "No Friend Requests" : "Friend Requests")

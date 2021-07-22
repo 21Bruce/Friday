@@ -63,7 +63,7 @@ struct SuggestTime: View {
                 }
             })
             .buttonStyle(BorderlessButtonStyle())
-            .frame(height:50)
+            .frame(height:60)
         }
     }
 }

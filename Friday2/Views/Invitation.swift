@@ -88,7 +88,7 @@ struct Invitations: View {
                                 .buttonStyle(BorderlessButtonStyle())
                                 .frame(height: 40)
                                 .padding(10)
-                                .sheet(isPresented:$isCoordinationViewShown, onDismiss: {isCoordinationViewShown = false}, content: {
+                                .fullScreenCover(isPresented:$isCoordinationViewShown, onDismiss: {isCoordinationViewShown = false}, content: {
                                         CoordinationView(showPopover: $isCoordinationViewShown).environmentObject(Map)})
                             }
                         }
