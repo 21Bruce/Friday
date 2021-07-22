@@ -12,6 +12,7 @@ struct ProfileView: View {
     @EnvironmentObject var Map: UserSocialMap
     @State var selectedTab =  "Plans"
     @State var planPreview: Plan? = nil
+    @State var isPlanCoordinationShown: Bool = false
     let gridColumns: [GridItem] = [
         GridItem(.fixed(170),spacing: 5, alignment: nil),
         GridItem(.fixed(170),spacing: 5, alignment: nil),
@@ -40,7 +41,7 @@ struct ProfileView: View {
                     
                     
                 }
-            .frame(height:DefaultMainUserIconRadius * 2.2)
+            .frame(height:DefaultMainUserIconRadius * 3)
               
                     ProfileTabBar(selectedTab: $selectedTab)
                         .opacity(planPreview != nil ? 0 : 1)
@@ -57,7 +58,7 @@ struct ProfileView: View {
                                     .padding(5)
                                 .opacity(planPreview != nil ? 0 : 1)
                                 .foregroundColor(Color(red: Plan.red, green: Plan.green, blue: Plan.blue, opacity: 1))
-                                    .frame(height:70)
+                                    .frame(height:100)
                                 .onTapGesture {
                                     withAnimation(.linear(duration: 0.5)){
                                         if(planPreview == nil){
@@ -96,15 +97,36 @@ struct ProfileView: View {
                                 RoundedRectangle(cornerRadius: 10)
                                     .foregroundColor(.white)
                                 VStack{
-                                    Text("Date: \(planPreview?.date.description ?? "")")
+                                    Text("Micheal Seibel's Birthday")
+                                        .font(.custom("Avenir Medium", size: 18))
+                                    Text("\(planPreview?.date.description ?? "")")
+                                        .font(.custom("Avenir Medium", size: 14))
                                     Text("Location:  \(planPreview?.address ?? "")")
+                                        .font(.custom("Avenir Medium", size: 14))
+                                    Button(action: {isPlanCoordinationShown.toggle()}, label: {
+                                        ZStack{
+                                            RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                                                .foregroundColor(Color(red: 40/255 , green:221/255, blue:249/255))
+                                            Text("Suggest Changes")
+                                                .font(.custom("Avenir Medium", size: 10))
+                                                .foregroundColor(.black)
+                                        }
+                                    })
+                                    .buttonStyle(BorderlessButtonStyle())
+                                    .frame(height:18)
+                                    .padding(3)
+                                    .fullScreenCover(isPresented:$isPlanCoordinationShown, onDismiss: {isPlanCoordinationShown = false
+                                    }, content: {
+                                        CoordinationView(showPopover: $isPlanCoordinationShown).environmentObject(Map)
+                                    })
+    
                                 }
                             }
-                            .frame(width: 200, height: 200, alignment: .center)
+                            .frame(width: 180, height: 250, alignment: .center)
                             .scaleEffect(planPreview != nil ? 2 : 0)
                             
-                            
                         }
+
                         .onTapGesture{
                             withAnimation(.linear(duration: 0.5)){
                                 if(planPreview != nil){
@@ -119,7 +141,6 @@ struct ProfileView: View {
                         
                     }
                     .transition(.move(edge: .leading))
-                    
                 }
                 if (selectedTab == "Thoughts"){
                     GeometryReader{geo in
