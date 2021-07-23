@@ -148,6 +148,8 @@ struct ModifiedSettingTab: View {
         })
     }
 }
+//Instructions: use a dictionary to link place with name and IconImage and use for each for all of it
+
 
 //MARK: OLD CODE
 
